@@ -15,14 +15,24 @@
 </head>
 <body>
 
-    <!-- List -->
+    
     <div id="app">
-        
+
+        <!-- Title -->
         <h1><i class="fas fa-list-ul"></i> Email List</h1>
-        
-        <div class="list">
-            <p v-for="mail in mails">{{mail}}</p>
+
+        <!-- List -->
+        <div v-if="mails.length > 0" class="list">
+
+            <p v-for="mail in mails">
+                <small @click="deleteMail" title="Delete"><i class="fas fa-times remove"></i></small>
+                {{mail}}
+            </p>
+
         </div>
+
+        <!-- If there is no list -->
+        <small v-else><em>Empty list</em></small>
         
     </div>
     

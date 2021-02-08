@@ -12,9 +12,16 @@ body {
 
 #logo, #app {width: 50%;}
 
-h1 {margin: 50px 0;}
+h1 {margin: 50px 10px;}
 
 img {max-height: 550px;}
 @media screen and (max-width: 800px) {
     img {display: none;}
+}
+
+p .remove{
+    opacity: 0;
+}
+p:hover .remove{
+    opacity: 1;
 }
