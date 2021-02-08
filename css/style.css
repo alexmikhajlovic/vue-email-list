@@ -1,0 +1,19 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    max-width: 1000px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo, #app{
+    width: 50%;
+}
+
+h1 {margin: 50px 0;}
+img {height: 40%;}
