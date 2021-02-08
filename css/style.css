@@ -14,9 +14,9 @@ body {
 
 h1 {margin: 50px 10px;}
 
-img {max-height: 550px;}
-@media screen and (max-width: 800px) {
-    img {display: none;}
+p.push{
+    padding: 0 10px;
+    color: grey;
 }
 
 p .remove{
@@ -24,4 +24,12 @@ p .remove{
 }
 p:hover .remove{
     opacity: 1;
+    color: grey;
 }
+
+img {max-height: 550px;}
+@media screen and (max-width: 800px) {
+    img {display: none;}
+}
+
+.list, .push {cursor: pointer;}

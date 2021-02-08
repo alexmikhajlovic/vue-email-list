@@ -19,6 +19,13 @@ var app = new Vue ({
     methods: {
         deleteMail(index) {
             this.mails.splice(index,1);
+        },
+        pushMail() {
+            axios
+            .get('https://flynn.boolean.careers/exercises/api/random/mail')
+            .then(result => {
+                this.mails.push(result.data.response);
+            });
         }
     }
 });
